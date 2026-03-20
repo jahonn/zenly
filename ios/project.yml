@@ -1,0 +1,29 @@
+name: Zenly
+options:
+  bundleIdPrefix: com.zenly
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  Zenly:
+    type: application
+    platform: iOS
+    sources:
+      - path: Zenly
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zenly.app
+        INFOPLIST_FILE: Zenly/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: false
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.0
